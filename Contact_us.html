@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(135deg, #00b7ff 0%, #b700ff 100%);
+            color: #333;
+        }
+        .contact-card {
+            max-width: 400px;
+            margin: 30px auto 20px auto;
+            padding: 24px 32px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            text-align: center;
+        }
+        .contact-card h2 {
+            margin-bottom: 10px;
+            color: #00b7ff;
+        }
+        .contact-card p {
+            margin: 6px 0;
+        }
+        .social-icons {
+            margin-top: 12px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #00b7ff;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover {
+            color: #b700ff;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 30px auto 0 auto;
+            padding: 36px 32px 28px 32px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+        input[type="submit"] {
+            background-color: #00b7ff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #00fe1e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <div class="contact-card">
+        <h2>Get in Touch</h2>
+        <p><strong>Email:</strong> info@example.com</p>
+        <p><strong>Phone:</strong> +1 234 567 8901</p>
+        <div class="social-icons">
+            <a href="https://x.com" title="Twitter" aria-label="Twitter"><span style="font-family:sans-serif;">&#x1F426;</span></a>
+            <a href="https://facebook.com" title="Facebook" aria-label="Facebook"><span style="font-family:sans-serif;">&#x1F5E8;</span></a>
+            <a href="https://instagram.com" title="Instagram" aria-label="Instagram"><span style="font-family:sans-serif;">&#x1F33F;</span></a>
+        </div>
+    </div>
+    <form class="contact-form" action="/submit_contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <input type="submit" value="Send Message">
+    </form>
+    
+</body>
+</html>
